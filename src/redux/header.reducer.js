@@ -1,6 +1,6 @@
 
 const initialState=[
-    {text:"Головна",link:'/golovna'},
+    {text:"Головна",link:'/'},
     {text:"Новини",link:'/news'},
     {text:"Документація",link:'/doc'},
     {text:"Модулі",link:'/modal'},
