@@ -42,7 +42,7 @@ const Golovna = () => {
                 </div>
                 <ul>
                     {state.info.map(item =>
-                        <li>{item}</li>
+                        <li key={item.id}>{item}</li>
                     )}
                 </ul>
             </section>
@@ -51,7 +51,7 @@ const Golovna = () => {
                 <hr />
                 <ul className="flex">
                     {state.meta.map(item =>
-                        <li>{item} </li>
+                        <li key={item.id}>{item} </li>
                     )}
                 </ul>
             </section>
@@ -60,7 +60,7 @@ const Golovna = () => {
                 <hr />
                 <ul>
                     {state.kompetention.map(item =>
-                        <li>{item}</li>
+                        <li key={item.id}>{item}</li>
                     )}
                 </ul>
             </section>
@@ -72,7 +72,7 @@ const Golovna = () => {
                         <h3>{item}</h3>
                         <div  className={style.flex_wrap}>
                             {data[index].map(item =>
-                                <div className={`img ${style.img}`}>
+                                <div key={item.id} className={`img ${style.img}`}>
                                     <img src={item} alt='' />
                                 </div>)}
                         </div>

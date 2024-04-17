@@ -7,14 +7,18 @@ import img3 from './../../img/footer/3.webp';
 import img4 from './../../img/footer/4.png';
 const Footer = (props) => {
     const state = useSelector(state => state.footer);
-    const listImg=[img1,img3,img2,img4]
+    const listImg = [img1, img3, img2, img4]
     return (
-        <footer >
-            <div className={style.contact}>
-                {state.map((item,index)=><Link to={item.link}><img src={listImg[index]} alt='' /></Link>)}
-            </div>
-            <p>Усі права захищені &#169; </p>
-        </footer>
+        <footer>
+        <div className={style.contact}>
+            {state.map((item, index) => (
+                <Link to={item.link} key={item.id}>
+                    <img src={listImg[index]} alt='' />
+                </Link>
+            ))}
+        </div>
+        <p>Усі права захищені &#169;</p>
+    </footer>
     )
 }
-export {Footer}
+export { Footer }

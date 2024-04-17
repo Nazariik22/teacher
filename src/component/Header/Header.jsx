@@ -7,13 +7,13 @@ const Header = (props) => {
     return (
         <header className={style.header}>
             <div className={style.header_info}>
-                <div className={`img ${style.img}`}><img src={img} alt=''/></div>
-            <ul className={style.ul}>
-                {state.map(item =>
-                    <li><NavLink to={item.link}>{item.text}</NavLink></li>)}
-            </ul>
+                <div className={`img ${style.img}`}><img src={img} alt='' /></div>
+                <ul className={style.ul}>
+                    {state.map(item => (
+                        <li key={item.id}><NavLink to={item.link}>{item.text}</NavLink></li>
+                    ))}
+                </ul>
             </div>
-            
         </header>
     )
 }

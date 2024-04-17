@@ -1,0 +1,28 @@
+.doc  h2,.document h2{
+    padding: 30px 0;
+}
+.doc ul{
+    list-style-type:lower;
+    margin-top: 20px;
+    margin-left: 30px;
+    gap: 20px;
+}
+.doc li,.doc a{
+    color:#5955fa;
+    transition: all .1s linear;
+}
+.doc a:hover,.doc li:hover{
+    color: #5955C0;
+}
+.document{
+    gap: 20px;
+}
+.document p{
+    text-align: justify;
+}
+.document iframe{
+    display: block;
+    margin: auto;
+    width: 900px;
+    height: 700px;
+}

@@ -8,6 +8,7 @@ import { Publick } from './component/Pages/Publick/Publick';
 import { News } from './component/Pages/News/News';
 import { Doc } from './component/Pages/Doc/Doc';
 import { Modal } from './component/Pages/Modal/Modal';
+import { Document } from './component/Pages/Doc/Document';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/doc" element={< Doc/>} />
                 <Route path="/modal" element={<Modal />} />
                 <Route path="/publick" element={<Publick />} />
+                <Route path="/doc/:document" element={<Document />} />
             </Routes>
             <Footer />
         </div>
