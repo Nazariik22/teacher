@@ -1,0 +1,48 @@
+.section{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+ height: 20%;
+}
+.main {
+    gap: 30px;
+    width: 1280px;
+
+}
+.main h2{
+    text-align: center;
+    font-size: 25px;
+}
+.column{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.img{
+    width: 400px;
+    height: 300px;
+    z-index: -1;
+}
+.img img{
+    object-fit: cover;
+}
+.blok{
+    width: 50%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+   gap: 20px;
+}
+.blok a{
+    align-self: flex-end;
+    text-align: center;
+    width: 150px;
+    display: block;
+    background: #000;
+    margin-top: 20px;
+    padding:10px ;
+    color: white;
+}
