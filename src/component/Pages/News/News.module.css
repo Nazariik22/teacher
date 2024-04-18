@@ -1,0 +1,9 @@
+.main{
+    justify-content: center;
+    position: relative;
+    gap: 30px;
+align-items: center;}
+.main img{
+width: 100px;height: 100px;
+position: relative;
+}
